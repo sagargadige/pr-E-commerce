@@ -1,0 +1,61 @@
+/* xxl */
+@media (max-width:1500px){
+    .container-xxl{
+        max-width: 1320px;
+    }
+}
+/* xl */
+@media (max-width:1399px){
+    .container-xl{
+        max-width: 1140px;
+    }
+}
+/* lg */
+@media (max-width:1199px){
+    .container-lg{
+        max-width: 960px;
+    }
+    .col-lg-6{
+        width: 50%;
+        padding: 0 15px;
+    }
+    .shoes-items .desc h4{
+        font-size: 1rem;
+    }
+    .shoes-items .desc .price span, .shoes-items .desc .price del{
+        font-size: 12px;
+        font-weight: 400;
+    }
+
+}
+/* md */
+@media (max-width:991px){
+    .container-md{
+        max-width: 720px;
+    }
+    .col-md-12{
+        width: 100%;
+        padding: 0 15px;
+    }
+    
+}
+/* sm */
+@media (max-width:767px){
+    .container-sm{
+        max-width: 540px;
+    }
+    nav{
+        display: none;
+        visibility: hidden;
+    }
+    header .search::after{
+        display: block;
+        visibility: visible;
+    }
+}
+/* xs */
+@media (max-width:575px){
+    .container-xs{
+        max-width: 100%;
+    }
+}

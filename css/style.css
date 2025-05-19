@@ -1,0 +1,277 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Golos+Text:wght@400..900&display=swap');
+
+:root{
+    --heading-color:#102542;
+    --accent-color:#F87060;
+    --heading-font:"Orbitron", sans-serif;
+    --default-font:"Golos Text", sans-serif;
+}
+body{
+    background-color: rgb(235, 217, 192);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    max-width: 1320px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+.h-100{
+    height: 100%;
+}
+.w-100{
+    width: 100%;
+}
+ul{
+    list-style: none;
+}
+img{
+    display: block;
+    width: 100%;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+    display: inline-block;
+}
+.col-3{
+    width: 25%;
+    padding: 0 15px;
+}
+.col-12{
+    width: 100%;
+    padding: 0 15px;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.text-center{
+    text-align: center;
+}
+.d-flex{
+    display: flex;
+}
+
+.flex-column{
+    flex-direction: column;
+}
+.justify-content-center{
+    justify-content: center;
+}
+.align-items-center{
+    align-items: center;
+}
+.justify-content-between{
+    justify-content: space-between;
+}
+.justify-content-evenly{
+    justify-content: space-evenly;
+}
+.py-2{
+    padding: 2rem 0;
+}
+.my-2{
+    margin: 2rem 0;
+}
+/* header start  */
+header h1{
+    font-family:"Orbitron", sans-serif;
+    font-weight: 800;
+    font-size: 2.5rem;
+    color: var(--heading-color);
+}
+header input{
+    border-radius: 20px;
+    padding: 5px 10px;
+}
+header .search::after{
+    content: '\F479';
+    position: absolute;
+    font-family: bootstrap-icons !important;
+    left: 190px;
+    top: 0px;
+    font-size: 30px;
+    visibility: hidden;
+    display: none;
+}
+header .search{
+    position: relative;
+}
+header i{
+    position: absolute;
+    right: 10px;
+    font-size: 1rem;
+    font-weight: 900;
+}
+header nav ul{
+    gap: 30px;
+}
+header nav ul li a{
+    letter-spacing: 1px;
+    font-weight: 500;
+    color:black;
+    transition: 0.3s;
+}
+header nav ul li a:hover{
+    color: var(--accent-color);
+}
+/* header end  */
+
+/* hero section start  */
+
+.hero{
+    background: url('../images/hero-bg.webp'),#000000b5;
+    background-blend-mode: darken;
+    height: 600px;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;  
+    margin-top: 1rem;
+}
+.hero .hero-content h2{
+    font-size: 56px;
+    letter-spacing: 3px;
+    margin-bottom: 2rem;
+    font-family: "Golos Text", sans-serif;
+    
+}
+.hero .hero-content a{
+    font-size: 12px;
+    background-color: gray;
+    padding: 15px 25px;
+    border-radius: 50px;
+    font-family: sans-serif;
+    color: whitesmoke;
+    letter-spacing: 1px;
+    transition: 0.5s;
+    font-weight: 600;
+}
+.hero .hero-content a:hover{
+    background-color: white;
+    color: black;
+}
+
+/* hero section end  */
+/* partner section start  */
+.partner{
+    padding: 2rem 0;
+    display: flex;
+    width: 100%;
+    margin-top: 20px;
+}
+.partner img {
+    width: 130px;
+    transition: transform 0.3s ease;
+}
+
+.partner img:hover {
+    transform: scale(1.1);
+}
+
+.partner{
+    
+    /* justify-content: space-between; */
+}
+.partner h3{
+    background-color: #80808073;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 30px;
+    font-family: var(--heading-font);
+    color: rgb(48, 48, 48);
+    transition: 0.6s;
+}
+.partner h3:hover{
+    color: #F87060;
+}
+/* partner section end  */
+
+/* best seller section start  */
+
+.best-seller h3{
+    background-color: #80808073;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 30px;
+    font-family: var(--heading-font);
+    color: rgb(48, 48, 48);
+    transition: 0.6s;
+}
+.best-seller h3:hover{
+        color: rgba(245, 245, 245, 0.849);
+        background-color: black;
+}
+
+.shoes-items{
+    text-align: center;
+    background-color: aliceblue;
+    transition: 0.3s;
+    border-radius: 5px;
+    border: 1px solid transparent;
+    margin: 1rem 0;
+}
+.shoes-items:hover{
+    border: 1px solid black;
+}
+.shoes-items .desc{
+    margin:1rem 0;
+}
+.shoes-items .desc h4{
+    padding: 10px 0;
+    font-size: 19px;
+    font-family:var(--default-font);
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+.shoes-items .desc .price{
+    font-family: sans-serif;
+    padding: 5px 0;
+    font-weight: 700;
+}
+.shoes-items .desc .price span{
+    color: var(--heading-color);
+    font-size: 1.2rem;
+}
+.shoes-items .desc .price del{
+    color: var(--accent-color);
+    font-weight: 200;
+    font-size: 1rem;
+}
+/* best seller section end  */
+/* footer start  */
+footer{
+    background-color: aliceblue;
+}
+footer h2{
+    font-family: var(--heading-font);
+    color: var(--heading-color);
+    padding: 20px 0;
+    font-size: 2rem;
+}
+footer .icons a{
+    margin: 5px 0;
+}
+footer .icons a i{
+    font-size: 2rem;
+    margin: 0px 15px;
+    transition: 0.3s;
+}
+footer .icons a i:hover{
+    color: var(--accent-color);
+}
+/* footer end  */
