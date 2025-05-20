@@ -20,10 +20,10 @@
         padding: 0 15px;
     }
     .shoes-items .desc h4{
-        font-size: 1rem;
+        font-size: 20px;
     }
     .shoes-items .desc .price span, .shoes-items .desc .price del{
-        font-size: 12px;
+        font-size: 20px;
         font-weight: 400;
     }
 
